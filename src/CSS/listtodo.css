@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+@keyframes container {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: skyblue;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
+  border: 1px solid whitesmoke;
+  animation-name: container;
+  animation-duration: 10s;
+  background-color: skyblue;
+  color: rgb(32, 35, 42);
+}
+
+.container-inner-list {
+  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  background-color: whitesmoke;
+}
+
+.delete-todos {
+  float: right;
+}
+
+.test-active:active {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1em;
+  }
+  .container-inner-list {
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+    border: 1px solid rgb(32, 35, 42);
+  }
+}

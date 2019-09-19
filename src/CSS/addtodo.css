@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-addtodo {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 23rem;
+  padding: 2rem 4rem;
+  border: 1px solid whitesmoke;
+  text-align: center;
+  background-color: skyblue;
+  position: relative;
+  -webkit-animation-name: containertodo; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+  animation-name: containertodo;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  color: rgb(32, 35, 42);
+}
+
+@keyframes containertodo {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(32, 35, 42);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: burlywood;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: skyblue;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.container-addtodo-inner {
+  margin-bottom: 2rem;
+  height: 5vh;
+  width: 100%;
+  background-color: white;
+  color: rgb(32, 35, 42);
+  font-size: 1.1em;
+}
+
+.label-form {
+  float: left;
+  margin-bottom: 0.3rem;
+}
+
+.btn {
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(32, 35, 42);
+  border-color: rgb(32, 35, 42);
+  color: white;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-addtodo {
+    margin: 2rem 8rem;
+    padding: 2rem 2rem;
+    border: 1px solid whitesmoke;
+    text-align: center;
+    background-color: skyblue;
+    color: rgb(32, 35, 42);
+  }
+
+  .container-addtodo-inner {
+    margin-bottom: 2rem;
+    height: 5vh;
+    width: 100%;
+    background-color: white;
+    color: rgb(32, 35, 42);
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-addtodo {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 2rem 2rem;
+    padding: 2rem 1rem;
+    border: 1px solid whitesmoke;
+    text-align: center;
+    background-color: skyblue;
+    color: rgb(32, 35, 42);
+  }
+
+  .container-addtodo-inner {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    height: 5vh;
+    width: 100%;
+    background-color: whitesmoke;
+    color: rgb(32, 35, 42);
+    font-size: 1em;
+  }
+
+  .label-form {
+    display: none;
+  }
+}
