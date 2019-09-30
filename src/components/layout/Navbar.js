@@ -8,7 +8,7 @@ class Navbar extends Component {
     const { brand } = this.props;
     return (
       <div className="navbar">
-        <div className="navbar-items" style={{ fontSize: "2em;" }}>
+        <div className="navbar-items">
           {brand}
         </div>
         <div className="navbar-items">

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/layout/Navbar";
 import Listtodos from "./components/todos/Listtodos";
 import { Provider } from "./context";
-import About from "./components/layout/About";
+import NotFound from "./components/layout/NotFound";
 import Addtodo from "./components/todos/Addtodo";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Listtodos} />
             <Route exact path="/addtodo" component={Addtodo} />
-            <Route exact path="/about" component={About} />
+            <Route component={NotFound} />
           </Switch>
         </div>
       </Router>
