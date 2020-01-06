@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { Component } from "react";
 import "../../CSS/addtodo.css";
 import uuid from "uuid";
@@ -6,9 +8,7 @@ import { Consumer } from "../../context";
 class Addtodo extends Component {
   state = {
     date: "",
-    morning: "",
-    afternoon: "",
-    evening: ""
+    activities: ""
   };
 
   handleChange = (e) => {
